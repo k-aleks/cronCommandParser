@@ -23,7 +23,7 @@ public class TimeFieldParser {
         if (input.contains("*/")) {
             String periodStr = input.substring(input.indexOf("*/") + 2);
             int period = Integer.parseInt(periodStr);
-            int count = ((to - from) + 1) / period;
+            int count = ((to - from) + period) / period;
             for (int i = 0; i < count; i++) {
                 res.add(i * period);
             }

@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class CronCommandPrinter {
-    private static final String EOL = "\r\n";
+    private static final String EOL = "\n";
 
     public String print(final CronCommand cronCommand) {
         StringBuilder sb = new StringBuilder();
@@ -14,6 +14,7 @@ public class CronCommandPrinter {
         sb.append(getTimeFieldLine("month", cronCommand.getMonths()));
         sb.append(getTimeFieldLine("day of week", cronCommand.getDaysOfWeek()));
         sb.append(getLine("command", cronCommand.getCommand()));
+        sb.setLength(sb.length() - 1);
         return sb.toString();
     }
 
