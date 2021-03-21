@@ -3,7 +3,7 @@
 This is a command line application which parses a cron string and expands each field to show the times at which it will run.   
 The application only considers the standard cron format with five time fields (minute, hour, day of month, month, and day of week) plus a command.
 
-`~$ cronCommanParser "*/15 0 1,15 * 1-5 /usr/bin/find"`
+`~$ cronCommandParser "*/15 0 1,15 * 1-5 /usr/bin/find"`
 
 ```
 minute        0 15 30 45
@@ -23,5 +23,5 @@ mvn clean compile assembly:single
 After the compilation is finished successfully you will find an executable `jar` file in the `target/` directory.  
 To use the command line application simply run the following:
 ```
-java -jar cronCommanParser.jar "*/15 0 1,15 * 1-5 /usr/bin/find"
+java -jar cronCommandParser.jar "*/15 0 1,15 * 1-5 /usr/bin/find"
 ```

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.kazakov</groupId>
-    <artifactId>cronCommanParser</artifactId>
+    <artifactId>cronCommandParser</artifactId>
     <version>1.0</version>
     <dependencies>
         <dependency>
@@ -54,7 +54,7 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
-                    <finalName>cronCommanParser</finalName>
+                    <finalName>cronCommandParser</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
                 </configuration>
                 <executions>
